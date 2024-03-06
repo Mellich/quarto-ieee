@@ -2,7 +2,9 @@
 title: A Sample Article Using `quarto-ieee` for IEEE Journal and Transactions
 format:
   ieee-pdf:
-    keep-tex: true  
+    keep-tex: true 
+    conference: true 
+    journaltype: conference
   ieee-html: default
 author:
   - id: dfolio
@@ -270,19 +272,6 @@ Main Caption
 The Tables are cross-referenced as @tbl-panel for details, especially @tbl-second.
 There is also @tbl-other.
 
-```{r}
-#| label: tbl-other
-#| tbl-cap: "A table"
-#| tbl.env: tabular
-#| fig-pos: h
-
-options(knitr.table.format = function() {if (knitr::is_latex_output()) 'latex' else 'pandoc'})
-dt <- data.frame(Col1=c('A','B','C'),
-                 Col2=c('D','E','F'),
-                 Col3=c('G','H','I'))
-
-knitr::kable(head(dt), booktabs = TRUE)
-```
 
 ## Bibliography
 
