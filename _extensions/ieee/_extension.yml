@@ -19,7 +19,7 @@ contributes:
         - appendix
       crossref:
         chapters: false
-        eq-prefix:
+        eq-prefix: Eq.
         eq-labels: (roman)
         fig-title: Fig.
         fig-prefix: Fig.
@@ -30,7 +30,6 @@ contributes:
       execute:
         echo: false
         warning: false
-        freeze: true
     pdf:
       pdf-engine: pdflatex
       keep-tex: true
