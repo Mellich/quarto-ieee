@@ -9,6 +9,11 @@ $endif$
 $if(funding)$
 \thanks{$for(funding)$$for(funding.statement)$$funding.statement$$endfor$$endfor$}
 $endif$
+$if(conference)$
+$for(by-author)$$author_conf.tex()$$sep$
+\and
+$endfor$
+$else$
 $if(author/allbutlast)$
 $for(by-author/allbutlast)$$author.tex()$$sep$,~$endfor$
 and~${ by-author/last:author.tex() }%
@@ -54,5 +59,6 @@ $if(by-author.note.text)$
 \thanks{$by-author.note.text$}
 $endif$
 $endfor$
+$endif$
 $endif$
 }

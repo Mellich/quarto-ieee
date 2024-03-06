@@ -41,6 +41,7 @@ contributes:
         - partials/doc-class.tex
         - partials/title.tex
         - partials/author.tex
+        - partials/author_conf.tex
         - partials/affiliation.tex
         - partials/before-body.tex
         - partials/before-body.tex
