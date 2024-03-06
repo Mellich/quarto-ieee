@@ -3,6 +3,17 @@
 ![Tested on Quarto-1.3](https://img.shields.io/badge/quarto-1.3-blue?label=quarto)
 ![Tested on Quarto-1.4](https://img.shields.io/badge/quarto-1.4-blue?label=quarto)
 
+## Changelog
+
+- Changed author list to better match IEEE conference layout
+- Add `conference` flag. If this fag is set to true, the conference layout for authors is used instead of the default one
+- Make conference style default. This is done using the following additional lines in the template YAML:
+  ```
+  ieee-pdf:
+    conference: true
+    jounraltype: conference
+  ```
+
 ## Overview
 
 `quarto-ieee` provide a [`IEEEtran`][`IEEEtran.cls`] template for [journal format](https://quarto.org/docs/journals/formats.html) with your [Quarto](https://quarto.org/) documents.
